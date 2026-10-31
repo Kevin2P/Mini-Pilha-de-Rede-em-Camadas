@@ -4,8 +4,6 @@
 
 **Pilha de quatro camadas em C sobre soquetes UDP, com enlace simulado**
 
-Trabalho Prático 2 · IME-USP
-
 </div>
 
 **Autor:** Kevin Miyahara Omori
