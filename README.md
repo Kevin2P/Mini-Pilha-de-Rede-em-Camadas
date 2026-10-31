@@ -6,9 +6,9 @@
 
 </div>
 
-**Autor:** Kevin Miyahara Omori
-
 ---
+
+**Autor:** Kevin Miyahara Omori
 
 ## Visão geral
 
