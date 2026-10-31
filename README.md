@@ -19,7 +19,7 @@ Cada instância do programa `ministack` é um nó com endereço lógico de 16 bi
  Aplicação  (chat, benchmark)            Aplicação
  Transporte (portas, ACK, retransmissão) Transporte
  Rede       (endereço, rota, TTL)        Rede
- Enlace     (CRC-16, simulação) ═════════ Enlace    frames em datagramas UDP
+ Enlace     (CRC-16, simulação)          Enlace    frames em datagramas UDP
 ```
 
 A aplicação oferece um chat com sessão (porta lógica 1) e um benchmark (porta 2). O transporte tem ACK cumulativo, janela deslizante (go-back-N), retransmissão por temporizador e um modo não confiável. Cada camada só inclui o cabeçalho da camada logo abaixo; a comunicação para cima usa callbacks: `src/node.c` (o único módulo que conhece todas as camadas) liga o enlace à rede e a rede ao transporte, e a aplicação registra os seus no transporte com `tp_bind`. Os testes verificam essa regra automaticamente.
