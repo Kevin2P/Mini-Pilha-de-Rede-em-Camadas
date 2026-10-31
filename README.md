@@ -12,16 +12,6 @@ Trabalho Prático 2 · IME-USP
 
 ---
 
-## Sumário
-
-- [Visão geral](#visão-geral)
-- [Compilar](#compilar)
-- [Como testar](#como-testar)
-- [Opções do programa](#opções-do-programa)
-- [Formatos dos cabeçalhos](#formatos-dos-cabeçalhos)
-- [Resultados](#resultados)
-- [Estrutura do projeto](#estrutura-do-projeto)
-
 ## Visão geral
 
 Cada instância do programa `ministack` é um nó com endereço lógico de 16 bits. Os nós se comunicam por UDP real, que faz o papel do meio físico; a camada de enlace simula perda, atraso, jitter e corrupção dos frames.
